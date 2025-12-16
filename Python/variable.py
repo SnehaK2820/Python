@@ -403,12 +403,12 @@ Object2.Function1()"""
 #     s=ty.split(" \" ")
 #     print(s)
 
-d = "12-02-2002"
+# d = "12-02-2002"
 
-date_string = "2023-02-12 00:00:00"
-print(date_string,"yyy")
-x= date_string[:10]
-print(x,'xxxx')
+# date_string = "2023-02-12 00:00:00"
+# print(date_string,"yyy")
+# x= date_string[:10]
+# print(x,'xxxx')
 # r = 
 # x = d.split('-')
 # j =  ('-'.join(x))
@@ -418,3 +418,32 @@ print(x,'xxxx')
 
 
 # print(1+  2.2)
+
+
+#  chatgpt
+# name = "Sneha"
+# years=4
+# goal = "Become a Django Web Developer"
+# print("Name:", name)
+# print("Experience:", years, "years")
+# print("Goal:", goal)
+
+# years = 4
+# if years>=3:
+#     print("Eligible for Django Developer")
+# else:
+#     print("Need more practice")
+
+# for i in range(1,20):
+#     if i%3 == 0:
+#         print(i)
+
+def functname(argu):
+    print("def func : ", argu)
+functname('python function')
+
+def add_task(task_name):
+    print("Task added:", task_name)
+
+add_task("Learn Django")
+add_task("Practice Python")
