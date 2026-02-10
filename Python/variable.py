@@ -438,12 +438,12 @@ Object2.Function1()"""
 #     if i%3 == 0:
 #         print(i)
 
-def functname(argu):
-    print("def func : ", argu)
-functname('python function')
+# def functname(argu):
+#     print("def func : ", argu)
+# functname('python function')
 
-def add_task(task_name):
-    print("Task added:", task_name)
+# def add_task(task_name):
+#     print("Task added:", task_name)
 
-add_task("Learn Django")
-add_task("Practice Python")
+# add_task("Learn Django")
+# add_task("Practice Python")
