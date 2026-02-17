@@ -1,0 +1,24 @@
+1. What is String?
+
+A string is a sequence of characters.
+Defined using:
+
+s1 = "Hello"
+s2 = 'Hello'
+s3 = """Multi line string"""
+Strings are immutable (cannot change after creation).
+2. Important String Properties
+
+Ordered
+Immutable
+Supports indexing, slicing,Iterable
+
+3.Indexing
+s = "Python"
+print(s[0])   # P
+print(s[-1])  # n
+
+
+Positive index → left to right
+
+Negative index → right to left
