@@ -16,3 +16,8 @@
 # a = string.rjust(length,fillchar)
 # print(a)
 
+# slicing
+s ='abcdefghijk'
+s = s[:-1]
+# print(s)
+

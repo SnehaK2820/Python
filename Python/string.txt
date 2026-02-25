@@ -22,3 +22,93 @@ print(s[-1])  # n
 Positive index → left to right
 
 Negative index → right to left
+
+1. What is String?
+
+A string is a sequence of characters.
+Defined using:
+
+s1 = "Hello"
+s2 = 'Hello'
+s3 = """Multi line string"""
+Strings are immutable (cannot change after creation).
+
+'''
+Final Quick Revision (One Line Answers)
+
+String immutability → Cannot modify after creation.
+
+find() vs index() → find returns -1, index gives error.
+
+split() vs join() → split breaks string, join combines list.
+
+Reverse string → [::-1]
+
+f-string → Modern string formatting using f""
+
+Memory in strings → Uses interning, creates new object if modified.
+
+== vs is → Value comparison vs memory comparison.
+'''
+
+
+2. Important String Properties
+
+Ordered
+Immutable
+Supports indexing, slicing,Iterable
+
+3.Indexing
+s = "Python"
+print(s[0])   # P
+print(s[-1])  # n
+
+Positive index → left to right
+
+Negative index → right to left
+
+4.Slicing
+s = "Python"
+print(s[0:4])   # Pyth
+print(s[::2])   # Pto
+print(s[::-1])  # nohtyP (reverse)
+
+
+Syntax:
+string[start : end : step]
+
+| Method         | Use                  |
+| -------------- | -------------------- |
+| `upper()`      | Convert to uppercase |
+| `lower()`      | Convert to lowercase |
+| `title()`      | First letter capital |
+| `capitalize()` | First char capital   |
+| `swapcase()`   | Change case          |
+| `isalpha()` | Only letters      |
+| `isdigit()` | Only digits       |
+| `isalnum()` | Letters + numbers |
+| `islower()` | Check lowercase   |
+| `isupper()` | Check uppercase   |
+| `isspace()` | Only spaces       |
+| `find()`       | Returns index (or -1)              |
+| `index()`      | Returns index (error if not found) |
+| `count()`      | Count occurrences                  |
+| `startswith()` | Check start                        |
+| `endswith()`   | Check end                          |
+| Method             | Use                      |
+| ------------------ | ------------------------ |
+| `replace(old,new)` | Replace text             |
+| `strip()`          | Remove spaces both sides |
+| `lstrip()`         | Remove left spaces       |
+| `rstrip()`         | Remove right spaces      |
+| Escape | Meaning      |
+| ------ | ------------ |
+| `\n`   | New line     |
+| `\t`   | Tab          |
+| `\\`   | Backslash    |
+| `\'`   | Single quote |
+
+
+
+
+
