@@ -1,0 +1,185 @@
+Tuple - tuple()
+A tuple is a collection which is ordered and unchangeable. In Python tuples are written with round brackets.
+Create a Tuple
+To create a tuple, use parentheses () and separate the items with commas.
+Example
+Create a Tuple:
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+Output:('apple', 'banana', 'cherry')
+Note: The tuple can have any number of items and they may be of different types (string, int, float, etc.).
+Example
+Create a Tuple with numbers:
+thistuple = (1, 5, 7, 9, 3)
+print(thistuple)
+Output:(1, 5, 7, 9, 3)
+Example
+Create a Tuple with mixed data types:
+thistuple = ("abc", 34, True, 40, "male")
+print(thistuple)
+Output:('abc', 34, True, 40, 'male')
+Note: The tuple can also be created without using parentheses. This is known as tuple packing.
+Example
+Create a Tuple without parentheses:
+thistuple = "apple", "banana", "cherry"
+print(thistuple)
+Output:('apple', 'banana', 'cherry')
+Note: To create a tuple with only one item, you have to add a comma after the item, otherwise it will not be recognized as a tuple.
+Example
+Create a Tuple with one item:
+thistuple = ("apple",)
+print(thistuple)
+Output:('apple',)
+Example
+Create a Tuple with one item without parentheses:
+thistuple = "apple",
+print(thistuple)
+Output:('apple',)
+Access Tuple Items
+You can access tuple items by referring to the index number, inside square brackets.
+Example
+Access Tuple Items:
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[1])
+Output:banana
+Note: The first item has index 0, the second item has index 1 etc.
+Example
+Negative Indexing
+Negative indexing means start from the end. -1 refers to the last item, -2 refers to the second last item etc.
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[-1])
+Output:cherry
+Example
+Range of Indexes
+You can specify a range of indexes by specifying where to start and where to end the range.When specifying a range, the return value will be a new tuple with the specified items.
+Note: The search will start at index 2 (included) and end at index 5 (not included).
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[2:5])
+Output:('cherry', 'orange', 'kiwi')
+Note: The search will start at the beginning and end at index 4 (not included).
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[:4])
+Output:('apple', 'banana', 'cherry', 'orange')
+Note: The search will start at index 2 (included) and end at the end of the tuple.
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[2:])
+Output:('cherry', 'orange', 'kiwi', 'melon', 'mango')
+Note: Negative indexing can also be used in ranges.
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[-4:-1])
+Output:('orange', 'kiwi', 'melon')
+
+Note: If you omit the start index, the range will start at the beginning of the tuple. If you omit the end index, the range will end at the end of the tuple.
+
+Note: If you omit both the start and the end index, the range will return the whole tuple.
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[:])
+Output:('apple', 'banana', 'cherry', 'orange', 'kiwi', 'melon', 'mango')
+Note: The range of indexes must be in the order of low index to high index, otherwise you will get an empty tuple as the result.
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[5:2])
+Output:()
+Note: If you try to access an index that is out of range, you will get an IndexError.
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[3])
+Output:IndexError: tuple index out of range
+Note: If you try to access an index that is out of range using negative indexing, you will also get an IndexError.
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[-4])
+Output:IndexError: tuple index out of range
+
+Note: You can also use the built-in function len() to determine how many items a tuple has.
+Example
+Determine the number of items in a Tuple:
+thistuple = ("apple", "banana", "cherry")
+print(len(thistuple))
+Output:3
+Note: You can use the built-in function type() to determine the data type of a tuple.
+Example
+Determine the data type of a Tuple:
+thistuple = ("apple", "banana", "cherry")
+print(type(thistuple))
+Output:<class 'tuple'>
+Note: You can use the built-in function tuple() to convert other data types into a tuple.
+Example
+Convert a list into a Tuple:
+mylist = ["apple", "banana", "cherry"]
+mytuple = tuple(mylist)
+print(mytuple)
+Output:('apple', 'banana', 'cherry')
+Example
+Convert a string into a Tuple:
+mystring = "hello"
+mytuple = tuple(mystring)
+print(mytuple)
+Output:('h', 'e', 'l', 'l', 'o')
+Note: You can also use the tuple() constructor to create a tuple.
+Example
+Create a Tuple using the tuple() constructor:
+thistuple = tuple(("apple", "banana", "cherry"))
+print(thistuple)
+Output:('apple', 'banana', 'cherry')
+Note: The tuple() constructor can take a list, a string, or any other iterable as an argument and convert it into a tuple.
+Example
+Create a Tuple from a list using the tuple() constructor:
+mylist = ["apple", "banana", "cherry"]
+mytuple = tuple(mylist)
+print(mytuple)
+Output:('apple', 'banana', 'cherry')
+Example
+Create a Tuple from a string using the tuple() constructor:
+mystring = "hello"
+mytuple = tuple(mystring)
+print(mytuple)
+Output:('h', 'e', 'l', 'l', 'o')
+Note: The tuple() constructor can also be used to create an empty tuple.
+Example
+Create an empty Tuple using the tuple() constructor:
+emptytuple = tuple()
+print(emptytuple)
+Output:()
+Note: You can also create an empty tuple by using empty parentheses.
+Example
+Create an empty Tuple using empty parentheses:
+emptytuple = ()
+print(emptytuple)
+Output:()
+Note: The tuple() constructor can also be used to create a tuple with one item.
+Example
+Create a Tuple with one item using the tuple() constructor:
+thistuple = tuple(("apple",))
+print(thistuple)
+Output:('apple',)
+Note: You can also create a tuple with one item by using parentheses and a comma.
+Example
+Create a Tuple with one item using parentheses and a comma:
+thistuple = ("apple",)
+print(thistuple)
+Output:('apple',)
+Note: If you try to create a tuple with one item without using a comma, it will not be recognized as a tuple.
+Example
+Create a Tuple with one item without using a comma:
+thistuple = ("apple")
+print(thistuple)
+Output:apple
+Note: The type of thistuple is not a tuple, but a string.
+print(type(thistuple))
+Output:<class 'str'>
+Note: To create a tuple with one item, you must include a comma after the item, even if you are using parentheses.
+Example
+Create a Tuple with one item using parentheses and a comma:
+thistuple = ("apple",)
+print(thistuple)
+Output:('apple',)
+Note: The type of thistuple is now a tuple.
+print(type(thistuple))
+Output:<class 'tuple'>
+Note: You can also create a tuple with one item without using parentheses, but you must include a comma after the item.
+Example
+Create a Tuple with one item without using parentheses:
+thistuple = "apple",
+print(thistuple)
+Output:('apple',)
+Note: The type of thistuple is still a tuple.
+print(type(thistuple))
+
